@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+<body>
+    <footer>
+        <form>
+
+            <fieldset>
+                <legend>Dati Personali</legend>
+                <ul>
+                    <li>
+                        <label for="email">Inserire Email
+                            <strong><abbr title="Richiesto">*</abbr></strong>
+                        </label>
+                        <input type="email" name="" id="email" required>
+                    </li>
+                    <li>
+                        <label for="password">Inserire Password
+                            <strong><abbr title="Richiesto">*</abbr></strong>
+                        </label>
+                        <input type="password" name="" id="password" required>
+                    </li>
+                    <li>
+                        <label for="nome e cognome">Inserire Nome e Cognome
+                            <strong><abbr title="Richiesto">*</abbr></strong>
+                        </label>
+                        <input type="text" name="" id="nome e cognome" required>
+                    </li> 
+                    <li>
+                        <label for="data di nascita">Inserire Data Di Nascita 
+                            <strong><abbr title="Richiesto">*</abbr></strong>
+                        </label>
+                        <input type="date" name="" id="data di nascita" required>
+                    </li>
+                    <li>
+                        <label for="telefono">Inserire Telefono
+                            <strong><abbr title="Richiesto">*</abbr></strong>
+                        </label>
+                        <input type="tel" name="" id="telefono" required>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipi Di Abbonamento :</legend>
+                <ul>
+                    <li>
+                        <label for="checkbox free">Abbonamento Free
+                        <input type="checkbox" name="" id="checkbox free" checked></label>
+                    </li>
+                    <li>
+                        <label for="checkbox lvl 1">Abbonamento lvl 1
+                        <input type="checkbox" name="" id="checkbox lvl 1"></label>
+                    </li>
+                    <li>
+                        <label for="checkbox lvl 2">Abbonamento lvl 2
+                        <input type="checkbox" name="" id="checkbox lvl 2"></label>
+                    </li>
+                    <li>
+                        <label for="checkbox lvl 3">Abbonamento lvl 3
+                        <input type="checkbox" name="" id="checkbox lvl 3"></label>
+                    </li>
+                </ul> 
+
+                <span>Descrizione dei vari abbonamenti</span><br><hr>
+
+                <label for="checkbox pro">
+                <span>Se si vogliono i Vantaggi PRO</span>
+                <input type="checkbox" name="" id="checkbox pro"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dati per il Pagamento</legend>
+                <ul>
+                    <li>
+                        <label for="ccn">Credit Card Number
+                        <strong><abbr title="Richiesto">*</abbr></strong></label>
+                        <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" 
+                        autocomplete="cc-number" minlength="19" maxlength="19" 
+                        placeholder="xxxx xxxx xxxx xxxx" required>
+                    </li>
+                    <li>
+                        <label for="cvc">CVC
+                        <strong><abbr title="Richiesto">*</abbr></strong></label>
+                        <input id="cvc" type="tel" inputmode="numeric" pattern="{0,3}" 
+                        autocomplete="cc-number" minlength="3" maxlength="3" placeholder="xxx" required>
+                    </li>
+                    <li>
+                        <label for="scadenza ccn">Inserire Scadenza
+                        <strong><abbr title="Richiesto">*</abbr></strong></label>
+                        <input type="month" name="scadenza ccn" id="scadenza ccn" required>
+                    </li>
+                    <li>
+                        <label for="indirizzo fatturazione">Indirizzo Di Fatturazione
+                        <strong><abbr title="Richiesto">*</abbr></strong></label>
+                        <input type="text" name="" id="indirizzo fatturazione" required>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <button type="submit">Registrati</button>
+        </form>
+    </footer>
+</body>
+</html>

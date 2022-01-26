@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+<body>
+    <footer>
+        <form>
+
+            <fieldset>
+                <legend>Dati Personali</legend>
+                <ul>
+                    <li>
+                        <label for="email">Inserire Email</label>
+                        <input type="email" name="" id="email">
+                    </li>
+                    <li>
+                        <label for="password">Inserire Password</label>
+                        <input type="password" name="" id="password">
+                    </li>
+                    <li>
+                        <label for="nome e cognome">Inserire Nome e Cognome</label>
+                        <input type="text" name="" id="nome e cognome">
+                    </li> 
+                    <li>
+                        <label for="data di nascita">Inserire Data Di Nascita</label>
+                        <input type="date" name="" id="data di nascita">
+                    </li>
+                    <li>
+                        <label for="telefono">Inserire Telefono</label>
+                        <input type="tel" name="" id="telefono">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipi Di Abbonamento :</legend>
+                <label for="selettore"></label>
+                <select name="" id="selettore">
+                    <optgroup label="Scelta Abbonamento"></optgroup>
+                    <option value="Livello 1"></option>
+                    <option value="Livello 2"></option>
+                    <option value="Livello 3"></option>
+                </select>
+                
+                <span>Descrizione dei vari abbonamenti</span><br><hr>
+
+                <label for="checkbox pro">Se si vogliono i Vantaggi PRO
+                <input type="checkbox" name="" id="checkbox pro"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dati per il Pagamento</legend>
+                <ul>
+                    <li>
+                        <label for="ccn">Credit Card Number</label>
+                        <input id="ccn" type="tel" inputmode="numeric">
+                    </li>
+                    <li>
+                        <label for="cvc">CVC</label>
+                        <input id="cvc" type="tel" inputmode="numeric">
+                    </li>
+                    <li>
+                        <label for="scadenza ccn">Inserire Scadenza</label>
+                        <input type="month" name="scadenza ccn" id="scadenza ccn">
+                    </li>
+                    <li>
+                        <label for="indirizzo fatturazione">Indirizzo Di Fatturazione</label>
+                        <input type="text" name="" id="indirizzo fatturazione">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <button type="submit">Registrati</button>
+        </form>
+    </footer>
+</body>
+</html>
