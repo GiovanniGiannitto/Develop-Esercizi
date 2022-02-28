@@ -1,0 +1,119 @@
+body {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+main {
+    background-color: black;
+    border: 10px solid black;
+	border-radius: 15px;
+    height: 350px;
+    width: 350px;
+    display: grid;
+    grid-template-columns:[start-c] 1fr [one-c] 1fr [two-c] 1fr [three-c] 1fr [last-c];
+    grid-template-rows: [start-r] 1fr [one-r] 1fr [two-r] 1fr [three-r] 1fr [four-r] 1fr [five-r] 1fr [last-r];
+    grid-template-areas: 
+    "text text text text"
+    "piu meno per diviso"
+    "sette otto nove uguale"
+    "quattro cinque sei uguale"
+    "uno due tre uguale"
+    "zero punto AC uguale";
+}
+input {
+	border: 2px solid black;
+    font-size: 30px;
+    font-weight: bold;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    text-align: end;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(65, 65, 65)
+}
+button {
+	border: 2px solid black;
+    font-size: 30px;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+}
+
+#button-white-radius {
+    background-color: white;
+    border-radius: 0 0 0 10px;
+}
+
+#button-grey {
+    background-color: rgb(177, 177, 177);
+}
+
+#button-white {
+    background-color: white;
+}
+
+#button-red-radius {
+    background-color: rgb(252, 101, 101);
+    border-radius: 0 0 10px 0;
+}
+
+#text {
+    grid-area: text;
+}
+#zero {
+    grid-area: zero;
+}
+#uno {
+    grid-area: uno;
+}
+#due {
+    grid-area: due;
+}
+#tre {
+    grid-area: tre;
+}
+#quattro {
+    grid-area: quattro;
+}
+#cinque {
+    grid-area: cinque;
+}
+#sei {
+    grid-area: sei;
+}
+#sette {
+    grid-area: sette;
+}
+#otto {
+    grid-area: otto;
+}
+#nove {
+    grid-area: nove;
+}
+#meno {
+    grid-area: meno;
+}
+#piu {
+    grid-area: piu;
+}
+#per {
+    grid-area: per;
+}
+#diviso {
+    grid-area: diviso;
+}
+#uguale {
+    
+    grid-area: uguale;
+}
+#punto {
+    grid-area: punto;
+}
+#AC {
+    grid-area: AC;
+}
+      

@@ -1,0 +1,16 @@
+:root {
+    --backgroundbody: black;
+    --backgroundball: orange;
+    --size: 100px;
+}
+
+body {
+    background-color: var(--backgroundbody);
+}
+
+.ball {
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--backgroundball);
+    border-radius: calc(var(--size)/2);
+}

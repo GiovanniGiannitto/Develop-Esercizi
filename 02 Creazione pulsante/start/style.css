@@ -1,0 +1,29 @@
+/*body {
+	font-family: monospace;
+}
+
+#expand-toggle {
+	display: none;
+}
+
+.expandable {
+	visibility: collapse;
+	background: gray;
+	color: white;
+}
+
+#expand-btn {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 6px 12px;
+	background-color: #ff8888;
+	border: 1px solid;
+	border-radius: 3px;
+	transition: 0.3s;
+} */
+
+.showbutton {display:block;margin:4px 0;}
+.nascondi {overflow:hidden;background: #fcfcfc;}
+/*.nascondi > div {-webkit-transition: all 0.3s ease;-moz-transition: margin 0.3s ease;-o-transition: all 0.3s ease;transition: margin 0.3s ease;}*/
+.showbutton[value="Mostra"] + .nascondi > div {margin-top:-100%;}
+.showbutton[value="Nascondi"] + .nascondi {padding:4px;}
