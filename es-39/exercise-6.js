@@ -19,14 +19,17 @@ class Circle {
 
 class AreaCalculator {
   static calculate(area) {
-    if(area instanceof Square) {
-      return square.side * square.side;
-    } if(area instanceof Rectangle) {
-        return rectangle.width * rectangle.height;
-    } if(area instanceof Circle) {
-        return circle.radius * circle.radius * 3.14;
+    console.log(area);
+    if (area instanceof Square) {
+      return area.side * area.side;
     }
-  } 
+    if (area instanceof Rectangle) {
+      return area.width * area.height;
+    }
+    if (area instanceof Circle) {
+      return area.radius * area.radius * 3.14;
+    }
+  }
 }
 
 const square = new Square(4);
