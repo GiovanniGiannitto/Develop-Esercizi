@@ -3,7 +3,6 @@ const person = {
   lastName: 'Rossi',
   age: 25
 }
-for (const [key, value] of Object.entries(person)) {
-  console.log(`${key}: ${value}`);
+Object.keys(person).forEach((keys) => console.log(`${keys}: ${person[keys]}`));
 }
 // Print values of person using Object.keys
