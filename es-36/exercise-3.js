@@ -4,7 +4,7 @@ class Person {
     this.lastName = lastName;
   }
   static fromObject(obj) {
-    return obj;
+    return new Person(obj.firstName, obj.lastName);
   }
 }
 
