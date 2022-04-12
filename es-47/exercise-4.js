@@ -9,5 +9,6 @@ const person = {
   console.log(`${item[0]}: ${item[1]}`);
 }*/
 
-const {...Person} = person;
-console.log({...Person});
+for (let [key, value] of Object.entries(person)) {
+  console.log(`${key}: ${value}`);
+}
