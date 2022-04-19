@@ -24,5 +24,17 @@
     li.target.style.color = "transparent";
   })
   
+  <!--oppure-->
+  
+  const elementsLi = document.querySelectorAll(".hero-list-item");
+  elementsLi.forEach((li) => {
+    li.addEventListener("mouseover", () => {
+      li.style.color = "red";
+    });
+    li.addEventListener("mouseout", () => {
+      li.style.color = "black";
+    });
+  });
+  
  
 </script>
